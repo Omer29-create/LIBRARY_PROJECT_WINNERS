@@ -3,10 +3,12 @@ package com.winners.libraryproject.service;
 import com.winners.libraryproject.entity.Category;
 import com.winners.libraryproject.entity.Loan;
 import com.winners.libraryproject.repository.LoanRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class LoanService {
 
     private final static String LOAN_NOT_FOUND = "loan with id %d not found";

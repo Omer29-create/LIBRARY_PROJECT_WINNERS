@@ -47,17 +47,17 @@ public class UserDTO {
         this.roles = roles;
     }
 
-    public void setRoles(Set<Role>roles){
-        Set<String>roles1=new HashSet<>();
+    public void setRoles(Set<Role> roles){
+        Set<String> roles1=new HashSet<>();
 
-        Role[] role=roles.toArray(new Role[roles.size()]);
+        Role[] role = roles.toArray(new Role[roles.size()]);
 
-        for (int i=0;i<roles.size();i++){
+        for (int i = 0; i < roles.size(); i++){
             if(role[i].getName().equals(UserRole.ROLE_ADMIN))
                 roles1.add("Administirator");
             else
                 roles1.add("Member");
         }
-        this.roles=roles1;
+        this.roles = roles1;
     }
 }
